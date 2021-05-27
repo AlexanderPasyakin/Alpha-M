@@ -2,7 +2,10 @@ body
 {
     margin: 0;
     color: #000;
-    background: #fff;
+    //background: #fff;
+    background-image: url(../images/Kak-modno-oformit-potolok.png);
+    background-repeat:no-repeat;
+    background-size:cover;
 }
 
 body.lock
@@ -32,5 +35,30 @@ button, a
     cursor: pointer;
 }
 
+.btn-menu
+{
+    padding: 0;
+    float: left;
+}
+
+.phone
+{
+    margin-left: 20%;
+}
+
+.mail
+{
+    margin-left: 4%;
+}
+
+.logo
+{
+    margin-left: 2%;
+
+    img
+    {
+        margin-top: 0.5%;
+    }
+}
 
 @import 'responce';
