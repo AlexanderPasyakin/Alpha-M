@@ -1,9 +1,25 @@
 $(document).ready(Core);
-
 function Core()
 {
     SetTabSwitcher();
     SetModal();
+    var carousel_main = $(".owl-carousel").owlCarousel(
+        {
+            items: 1,
+            loop: true,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 10000,
+            smartSpeed: 1000
+        }
+    );
+
+    $('.next').click(function() {
+        carousel_main.trigger('next.owl.carousel');
+    });
+    $('.prev').click(function() {
+        carousel_main.trigger('prev.owl.carousel', [1000]);
+    });
 }
 
 function SetTabSwitcher()

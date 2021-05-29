@@ -1,10 +1,13 @@
 mixin Header()
-    section
-        button.btn.btn-menu
+    section.header
+        button.btn.btn-menu(modal="test")
             img(src="assets/images/menu.png", alt="")
         a.logo(href="")
             img(src="assets/images/logo.png", alt="")
-        a.phone(href="tel:+74591234567")
+        a.phone(href="tel:+74591234567") 
             img(src="assets/images/phone.png", alt="")
-        a.mail(href="mailto:zakaz@apfa-ms.ru") 
+            p +74591234567
+        a.mail(href="mailto:zakaz@apfa-ms.ru")
             img(src="assets/images/mail.png", alt="")
+            p zakaz@apfa-ms.ru
+        +Modal("test", "ModalTemplate")

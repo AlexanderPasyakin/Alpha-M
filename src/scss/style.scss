@@ -2,10 +2,19 @@ body
 {
     margin: 0;
     color: #000;
-    //background: #fff;
-    background-image: url(../images/Kak-modno-oformit-potolok.png);
+    background: white;
+    //background-image: url(../images/Kak-modno-oformit-potolok.png);
     background-repeat:no-repeat;
     background-size:cover;
+    font-family: opensans;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.container
+{
+    max-width: 1550px;
 }
 
 body.lock
@@ -35,20 +44,51 @@ button, a
     cursor: pointer;
 }
 
+.header
+{
+    img
+    {
+        vertical-align: middle;
+    }
+}
+
 .btn-menu
 {
     padding: 0;
     float: left;
+    border: none;
+    height: 60px;
+    width: 60px;
+    img
+    {
+        size: unset;
+    }
 }
 
 .phone
 {
-    margin-left: 20%;
+    margin-left: 25%;
+
+    p
+    {
+        display: inline;
+        margin-left: 10px;
+        font-weight: bold;
+        color: white;
+    }
 }
 
 .mail
 {
     margin-left: 4%;
+
+    p
+    {
+        display: inline;
+         margin-left: 10px;
+        
+        color: white;
+    }
 }
 
 .logo
@@ -59,6 +99,264 @@ button, a
     {
         margin-top: 0.5%;
     }
+}
+.footer
+{
+    flex: 0 0 auto;
+    background-color: white;
+
+    .container
+    {
+        padding-top: 15px;
+        padding-bottom: 5px;
+    }
+
+    img
+    {
+        vertical-align: middle;
+    }
+
+    .footer-call
+    {
+        margin-left: 5%;
+        p
+        {
+            display: inline;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+    }
+
+    .footer-location
+    {
+        margin-left: 22%;
+        p
+        {
+            display: inline;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+    }
+
+    .footer-policy
+    {
+        float: right;
+        font-weight: bold;
+    }
+
+    .copyright
+    {
+        text-align: center;
+        font-size: 14px;
+    }
+}
+
+.content-main
+{
+    flex: 1 0 auto;
+    .feedback
+    {
+        position: absolute;
+        margin-top: 15%;
+
+        .feedback-call, .feedback-mail, .feedback-message, .feedback-map
+        {
+            margin: 0;
+            padding: 0;
+            height: 67px;
+
+            img
+            {
+                border: 1px solid rgb(228, 228, 228);
+            }
+
+            a
+            {
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+
+    .main-info
+    {
+        padding: 2%;
+        float: right;
+        background-color: rgba(255, 255, 255, 0.88);
+        margin-top: -42%;
+        text-align: center;
+        padding-bottom: 14%;
+        margin-right: 10%;
+        overflow: hidden;
+
+        h1
+        {
+            margin-top: 50%;
+            font-family: akrobat;
+            font-weight: bold;
+            font-size: 73px;
+        }
+
+        h2
+        {
+            font-family: akrobat;
+            font-weight: bold;
+            font-size: 26px;
+        }
+
+        p
+        {
+            font-size: 14px;
+        }
+
+        .btn-podrobnee
+        {
+            border: none;
+            background-color: black;
+            color: white;
+            padding: 3% 6% 3% 6%;
+            font-family: akrobat;
+            font-size: 18px;
+            margin-top: 5%;
+        }
+
+        img
+        {
+            margin-top: 5%;
+            margin-left: 20px;
+        }
+    }
+
+    .owl-carousel
+    {
+        width: 100vw;
+        height: 80vh;
+        margin-top: -3.5%;
+        z-index: -1;
+
+        img
+        {
+            width: 100vw;
+            height: 93vh;
+        }
+    }
+
+    .next, .prev
+    {
+        font-size: 28px;
+        color: white;
+        display:inline-block;
+        background-color: black;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        float: right;
+        margin-top: 3.3%;
+
+        img
+        {
+            margin-top: 25%;
+            //vertical-align: middle;
+        }
+    }
+    .prev:hover, .next:hover
+    {
+        background-color: rgb(199, 43, 47);
+    }
+}
+
+.modal
+{
+    background-color: rgba(0, 0, 0, 0.92);
+}
+
+.modal__content
+{
+    background: none;
+    color: white;
+    font-family: acrobat;
+    font-weight: bold;
+    font-size: 24px;
+    h1
+    {
+        font-size: 40px;
+    }
+    width: 80vw;
+    margin-left: 5%;
+}
+
+.btn__modal__close
+{
+    right: auto;
+    left: 10px;
+    top: 10px;
+    background: none;
+}
+
+.btn__modal__close::before, .btn__modal__close:hover::before
+{
+    content: "";
+    height: 2px;
+    width: 70%;
+    position: absolute;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%) rotate(45deg);
+    -ms-transform: translate(-50%,-50%) rotate(45deg);
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+
+.btn__modal__close:after, .btn__modal__close:hover::after
+{
+    content: "";
+    height: 2px;
+    width: 70%;
+    position: absolute;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%) rotate(-45deg);
+    -ms-transform: translate(-50%,-50%) rotate(-45deg);
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+.btn__modal__close:hover
+{
+    background: none;
+}
+
+.price-menu
+{
+    color: rgba(186, 186, 186, 0.2);
+}
+.podbor-menu
+{
+    color: rgba(186, 186, 186, 0.4);
+}
+.ostudii-menu
+{
+    color: rgba(255, 255, 255, 0.6);
+}
+.projects-menu
+{
+    color: white;
+}
+.contacts-menu
+{
+    color: rgba(186, 186, 186, 0.7);
+}
+.klienti-menu
+{
+    color: rgba(186, 186, 186, 0.5);
+}
+.arch-menu
+{
+    color: rgba(186, 186, 186, 0.35);
+}
+.catalog-menu
+{
+    color: rgba(186, 186, 186, 0.2);
 }
 
 @import 'responce';
