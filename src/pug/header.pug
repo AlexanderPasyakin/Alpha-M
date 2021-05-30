@@ -1,13 +1,41 @@
-mixin Header()
+mixin Header(black)
     section.header
-        button.btn.btn-menu(modal="test")
-            img(src="assets/images/menu.png", alt="")
-        a.logo(href="")
-            img(src="assets/images/logo.png", alt="")
-        a.phone(href="tel:+74591234567") 
-            img(src="assets/images/phone.png", alt="")
-            p +74591234567
-        a.mail(href="mailto:zakaz@apfa-ms.ru")
-            img(src="assets/images/mail.png", alt="")
-            p zakaz@apfa-ms.ru
+        if black == 'true'
+            button.btn.btn-menu.nav-black-btn(modal="test")
+                img(src="assets/images/menu.png", alt="")
+            a.logo(href="index.html")
+                img(src="assets/images/logo.png", alt="")
+            a.phone.nav-black-a(href="tel:+74591234567") 
+                p +74591234567
+            a.mail.nav-black-a(href="mailto:zakaz@apfa-ms.ru")
+                p zakaz@apfa-ms.ru
+        else 
+            button.btn.btn-menu(modal="test")
+                img(src="assets/images/menu.png", alt="")
+            a.logo(href="index.html")
+                img(src="assets/images/logo.png", alt="")
+            a.phone(href="tel:+74591234567") 
+                p +74591234567
+            a.mail(href="mailto:zakaz@apfa-ms.ru")
+                p zakaz@apfa-ms.ru
+        .social
+            a.instagram(href="") 
+                img(src="assets/images/instagram.png", alt="")
+            a.vk(href="") 
+                img(src="assets/images/vk.png", alt="")
+            a.facebook(href="") 
+                img(src="assets/images/facebook.png", alt="")
+        .feedback
+            .feedback-call
+                a(href="tel:+")
+                    img(src="assets/images/feedbackPhone.png", alt="") 
+            .feedback-mail
+                a(href="mailto:") 
+                    img(src="assets/images/feedbackMail.png", alt="") 
+            .feedback-message
+                a(href="") 
+                    img(src="assets/images/feedbackMessage.png", alt="")
+            .feedback-map
+                a(href="") 
+                    img(src="assets/images/feedbackMap.png", alt="")
         +Modal("test", "ModalTemplate")

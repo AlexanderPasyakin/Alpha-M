@@ -46,60 +46,153 @@ button, a
 
 .header
 {
+    .btn-menu
+    {
+        padding: 0;
+        float: left;
+        border: none;
+        height: 60px;
+        width: 60px;
+        img
+        {
+            size: unset;
+        }
+    }
+
+    .phone
+    {
+        margin-left: 25%;
+
+        p
+        {
+            display: inline;
+            margin-left: 10px;
+            font-weight: bold;
+            color: white;
+            padding-left: 40px;
+        }
+    }
+
+    .phone::before
+    {
+        position: absolute;
+        width: 33px;
+        height: 33px;
+        content: "";
+        background-image: url("../images/phone.png");
+        margin-top: 8px;
+    }
+
+    .phone.nav-black-a::before
+    {
+        position: absolute;
+        width: 33px;
+        height: 33px;
+        content: "";
+        background-image: url("../images/phone_black.png");
+        margin-top: 8px;
+    }
+
+    .mail::before
+    {
+        position: absolute;
+        width: 33px;
+        height: 33px;
+        content: "";
+        background-image: url("../images/mail.png");
+        margin-top: 8px;
+    }
+
+    .mail.nav-black-a::before
+    {
+        position: absolute;
+        width: 33px;
+        height: 33px;
+        content: "";
+        background-image: url("../images/mail_black.png");
+        margin-top: 8px;
+    }
+
+    .mail
+    {
+        margin-left: 4%;
+
+        p
+        {
+            display: inline;
+            padding-left: 40px;
+            
+            color: white;
+        }
+    }
+
+    .logo
+    {
+        margin-left: 2%;
+
+        img
+        {
+            margin-top: 0.5%;
+        }
+    }
+
     img
     {
         vertical-align: middle;
     }
-}
 
-.btn-menu
-{
-    padding: 0;
-    float: left;
-    border: none;
-    height: 60px;
-    width: 60px;
-    img
+    .social
     {
-        size: unset;
+        display:inline-block;
+        margin-left: 11%;
+    }
+
+    .instagram, .vk, .facebook
+    {
+        position:relative;
+        //margin-top: 0.5%;
+        margin-left: 20px;
+    }
+
+    .feedback
+    {
+        //position: absolute;
+        position: fixed;
+        margin-top: 15%;
+
+        .feedback-call, .feedback-mail, .feedback-message, .feedback-map
+        {
+            margin: 0;
+            padding: 0;
+            height: 67px;
+
+            img
+            {
+                border: 1px solid rgb(228, 228, 228);
+            }
+
+            a
+            {
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+
+    .nav-black-btn
+    {
+        margin-left: 10%;
+    }
+
+    .nav-black-a
+    {
+        p
+        {
+            color: black;
+        }
     }
 }
 
-.phone
-{
-    margin-left: 25%;
-
-    p
-    {
-        display: inline;
-        margin-left: 10px;
-        font-weight: bold;
-        color: white;
-    }
-}
-
-.mail
-{
-    margin-left: 4%;
-
-    p
-    {
-        display: inline;
-         margin-left: 10px;
-        
-        color: white;
-    }
-}
-
-.logo
-{
-    margin-left: 2%;
-
-    img
-    {
-        margin-top: 0.5%;
-    }
-}
 .footer
 {
     flex: 0 0 auto;
@@ -154,29 +247,6 @@ button, a
 .content-main
 {
     flex: 1 0 auto;
-    .feedback
-    {
-        position: absolute;
-        margin-top: 15%;
-
-        .feedback-call, .feedback-mail, .feedback-message, .feedback-map
-        {
-            margin: 0;
-            padding: 0;
-            height: 67px;
-
-            img
-            {
-                border: 1px solid rgb(228, 228, 228);
-            }
-
-            a
-            {
-                margin: 0;
-                padding: 0;
-            }
-        }
-    }
 
     .main-info
     {
@@ -185,7 +255,7 @@ button, a
         background-color: rgba(255, 255, 255, 0.88);
         margin-top: -42%;
         text-align: center;
-        padding-bottom: 14%;
+        padding-bottom: 17%;
         margin-right: 10%;
         overflow: hidden;
 
@@ -218,12 +288,6 @@ button, a
             font-family: akrobat;
             font-size: 18px;
             margin-top: 5%;
-        }
-
-        img
-        {
-            margin-top: 5%;
-            margin-left: 20px;
         }
     }
 
@@ -357,6 +421,157 @@ button, a
 .catalog-menu
 {
     color: rgba(186, 186, 186, 0.2);
+}
+
+.ostudii-content
+{
+    .title
+    {
+        h1
+        {
+            font-size: acrobat;
+            font-weight: bold;
+            font-size: 48px;
+        }
+    }
+
+    .description
+    {
+        background-image: url(../images/backgroundDescription.png);
+        color: white;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        margin-top: 5%;
+    }
+
+    .history-studio
+    {
+        height: 670px;
+
+        .image
+        {   
+            margin-left: -12.6%;
+            display: inline-block;
+            background-image: url(../images/historyStudio.png);
+            width: 48vw;
+            height: 670px;
+            background-repeat:round;
+
+        }
+        
+        .text
+        {
+            margin-top: 6%; 
+            width: 30vw;
+            float: right;
+        }
+    }
+
+    .kak-mi-rabotaem
+    {
+        height: 670px;
+        margin-top: 50px;
+
+        .text
+        {
+            margin-top: 7%; 
+            width: 30vw;
+            float: left;
+
+            .projecting::before
+            {
+                content: "";
+                background-image: url(../images/projecting.png);
+                width: 50px;
+                height: 60px;
+                position: absolute;
+                margin-top: 30px;
+            }
+
+            .creating::before
+            {
+                content: "";
+                background-image: url(../images/creating.png);
+                width: 44px;
+                height: 60px;
+                position: absolute;
+                margin-top: 150px;
+            }
+
+            .performing::before
+            {
+                content: "";
+                background-image: url(../images/performing.png);
+                width: 60px;
+                height: 60px;
+                position: absolute;
+                margin-top: 270px;
+            }
+
+            .seting::before
+            {
+                content: "";
+                background-image: url(../images/seting.png);
+                width: 60px;
+                height: 60px;
+                position: absolute;
+                margin-top: 370px;
+            }
+
+            .projecting, .creating, .performing, .seting
+            {
+                p
+                {
+                    width: 25vw;
+                    float: right;
+                }
+            }
+        }
+
+        .image
+        {
+            display: inline-block;
+            background-image: url(../images/kakMiRabotaem.png);
+            width: 48vw;
+            height: 670px;
+            background-repeat:round;
+            float: right;
+            margin-right: -12.6%;
+        }
+    }
+
+    .podhod
+    {
+        margin-top: 50px;
+
+        .image
+        {
+            display: inline-block;
+            background-image: url(../images/podhod.png);
+            width: 48vw;
+            height: 670px;
+            background-repeat:round;
+            margin-left: -12.6%;
+        }
+
+        .text
+        {
+            margin-top: 7%; 
+            width: 30vw;
+            float: right;
+        }
+
+        .btn-consultation
+        {
+            border: none;
+            background-color: black;
+            color: white;
+            padding: 3% 6% 3% 6%;
+            font-family: akrobat;
+            font-size: 18px;
+            margin-top: 5%;
+        }
+    }
 }
 
 @import 'responce';
