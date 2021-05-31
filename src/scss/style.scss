@@ -113,6 +113,11 @@ button, a
         margin-top: 8px;
     }
 
+    .phone.nav-black-a
+    {
+        margin-left: 16%;
+    }
+
     .mail
     {
         margin-left: 4%;
@@ -572,6 +577,122 @@ button, a
             margin-top: 5%;
         }
     }
+}
+
+.podbor-content
+{
+    .title
+    {
+        h1
+        {
+            font-family: acrobat;
+            font-weight: bold;
+            font-size: 48px;
+        }
+
+        p
+        {
+            font-size: 18px;
+            width: 47vw;
+        }
+    }
+
+    .description
+    {
+        padding-top: 60px;
+        padding-bottom: 50px;
+        background-image: url(../images/podborBackgrounf.png);
+        .container
+        {
+            p
+            {
+                text-align: center;
+                color: white;
+            }
+        }
+    }
+
+    .podbor-main-content
+    {
+        .text
+        {
+            width: 25vw;
+            display: inline-block;
+            margin-top: 2%;
+
+            .btn-podbor
+            {
+                border: none;
+                background-color: black;
+                color: white;
+                padding: 3% 6% 3% 6%;
+                font-family: akrobat;
+                font-size: 18px;
+                margin-top: 5%;
+            }
+        }
+
+        .image
+        {
+            background-image: url(../images/budteUvereni.png);
+            width: 800px;
+            height: 600px;
+            display: inline-block;
+            float: right;
+            margin-right: -12.5%;
+        }
+    }
+
+    .garantia
+            {
+                margin-top: 56px;
+                padding: 20px 50px 20px 50px;
+                background-color: rgb(35, 35, 35);
+                margin-left: -12.6%;
+                display: inline-block;
+                width: 30vw;
+
+                h1
+                {
+                    font-weight: bold;
+                    color: white;
+                    font-size: 28px;
+                    margin-left: 30%;
+                }
+
+                p
+                {
+                    margin-left: 30%;
+                    color: white;
+                    margin-top: -25px;
+                }
+            }
+            
+            .kachestvo
+            {
+                margin-left: -10px;
+                margin-top: 56px;
+                padding: 20px 50px 20px 50px;
+                background-color: rgb(131, 145, 151);
+                display: inline-block;
+                width: 536px;
+                position: absolute;
+
+                h1
+                {
+                    font-weight: bold;
+                    color: white;
+                    font-size: 28px;
+                    margin-left: 5%;
+                }
+
+                p
+                {
+                    margin-left: 5%;
+                    color: white;
+                    margin-top: -25px;
+                }
+            }
 }
 
 @import 'responce';
