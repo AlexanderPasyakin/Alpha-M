@@ -1,6 +1,6 @@
 mixin Header(black)
-    section.header
-        if black == 'true'
+    if black == 'true'
+        section.header.header-black        
             button.btn.btn-menu.nav-black-btn(modal="test")
                 img(src="assets/images/menu.png", alt="")
             a.logo(href="index.html")
@@ -9,7 +9,29 @@ mixin Header(black)
                 p +74591234567
             a.mail.nav-black-a(href="mailto:zakaz@apfa-ms.ru")
                 p zakaz@apfa-ms.ru
-        else 
+            .social
+                a.instagram(href="") 
+                    img(src="assets/images/instagram.png", alt="")
+                a.vk(href="") 
+                    img(src="assets/images/vk.png", alt="")
+                a.facebook(href="") 
+                    img(src="assets/images/facebook.png", alt="")
+            .feedback
+                .feedback-call
+                    a(href="tel:+")
+                        img(src="assets/images/feedbackPhone.png", alt="") 
+                .feedback-mail
+                    a(href="mailto:") 
+                        img(src="assets/images/feedbackMail.png", alt="") 
+                .feedback-message
+                    a(href="") 
+                        img(src="assets/images/feedbackMessage.png", alt="")
+                .feedback-map
+                    a(href="") 
+                        img(src="assets/images/feedbackMap.png", alt="")
+            +Modal("test", "ModalTemplate")
+    else 
+        section.header
             button.btn.btn-menu(modal="test")
                 img(src="assets/images/menu.png", alt="")
             a.logo(href="index.html")
@@ -18,24 +40,24 @@ mixin Header(black)
                 p +74591234567
             a.mail(href="mailto:zakaz@apfa-ms.ru")
                 p zakaz@apfa-ms.ru
-        .social
-            a.instagram(href="") 
-                img(src="assets/images/instagram.png", alt="")
-            a.vk(href="") 
-                img(src="assets/images/vk.png", alt="")
-            a.facebook(href="") 
-                img(src="assets/images/facebook.png", alt="")
-        .feedback
-            .feedback-call
-                a(href="tel:+")
-                    img(src="assets/images/feedbackPhone.png", alt="") 
-            .feedback-mail
-                a(href="mailto:") 
-                    img(src="assets/images/feedbackMail.png", alt="") 
-            .feedback-message
-                a(href="") 
-                    img(src="assets/images/feedbackMessage.png", alt="")
-            .feedback-map
-                a(href="") 
-                    img(src="assets/images/feedbackMap.png", alt="")
-        +Modal("test", "ModalTemplate")
+            .social
+                a.instagram(href="") 
+                    img(src="assets/images/instagram.png", alt="")
+                a.vk(href="") 
+                    img(src="assets/images/vk.png", alt="")
+                a.facebook(href="") 
+                    img(src="assets/images/facebook.png", alt="")
+            .feedback
+                .feedback-call
+                    a(href="tel:+")
+                        img(src="assets/images/feedbackPhone.png", alt="") 
+                .feedback-mail
+                    a(href="mailto:") 
+                        img(src="assets/images/feedbackMail.png", alt="") 
+                .feedback-message
+                    a(href="") 
+                        img(src="assets/images/feedbackMessage.png", alt="")
+                .feedback-map
+                    a(href="") 
+                        img(src="assets/images/feedbackMap.png", alt="")
+            +Modal("test", "ModalTemplate")

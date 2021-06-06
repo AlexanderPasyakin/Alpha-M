@@ -4,6 +4,159 @@
     {
         max-width: 1024px;
     }
+
+    .header{
+        .phone{
+            margin-left: 50px;
+        }
+
+        .social{
+            margin-left: 160px;
+        }
+
+        .phone.nav-black-a
+        {
+            margin-left: 50px;
+        }
+    }
+
+    .footer{
+        .footer-location
+        {
+            margin-left: 60px;
+        }
+    }
+
+    .content-main
+    {
+        height: 87vh;
+        .main-info{
+            margin-top: -700px;
+            margin-right: 30px;
+            padding-bottom: 210px;
+        }
+
+        .next, .prev{
+            margin-top: 34px;
+            //margin-left: -50px;
+        }
+
+        .owl-carousel
+        {
+            //height: 60vh;
+
+            img
+            {
+                height: 90vh;
+            }
+        }
+    }
+
+    .ostudii-content{
+        .history-studio{
+            .text{
+                width: 35vw;
+            }
+        }
+
+        .kak-mi-rabotaem{
+            .text{
+                width: 45vw;
+
+                .projecting, .creating, .performing, .seting{
+                    width: 43vw;
+                    p{
+                        width: 33vw;
+                    }
+                }
+
+                .projecting::before
+                {
+                    margin-top: 45px;
+                }
+
+                .creating::before{
+                    margin-top: 185px;
+                }
+
+                .performing::before{
+                    margin-top: 315px;
+                }
+
+                .seting::before{
+                    margin-top: 425px;
+                }
+            }
+        }
+
+        .podhod{
+            .text{
+                width: 35vw;
+            }
+        }
+    }
+
+    .podbor-content{
+        .podbor-main-content
+        {
+            .text{
+                width: 30vw;
+            }
+
+            .image{
+                width: 700px;
+            }
+        }
+        
+        .garantia{
+            width: 25vw;
+            margin-top: 36px;
+
+            h2, p{
+                margin-left: 10%;
+            }
+        }
+
+        .kachestvo{
+            width: 255px;
+            margin-top: 36px;
+        }
+    }
+
+    .price-content{
+        .card-price{
+            width: 400px;
+            margin-left: 70px;
+
+            img{
+                width: 400px;
+            }
+            .check-box{
+                width: 36px;
+                margin-left: 80px;
+                margin-top:0;
+            }
+
+            .check-box-text{
+                margin-top:-5px;
+            }
+
+            h2{
+                font-size: 16px;
+            }
+
+            p{
+                font-size: 14px;
+            }
+        }
+
+        .card4{
+            margin-top: -175px;
+            img{
+                height: 500px;
+            }
+        }
+    }
 }
 
 @media(max-width: 1024px)
@@ -11,6 +164,153 @@
     .container
     {
         max-width: 992px;
+    }
+
+    .header{
+        .phone{
+            margin-left: 40px;
+        }
+
+        .social{
+            margin-left: 100px;
+        }
+    }
+
+    .header-black{
+        .phone{
+            margin-left: 10px;
+        }
+
+        .social{
+            margin-left: 10px;
+        }
+    }
+
+    .content-main{
+        .main-info{
+            padding-bottom: 215px;
+            margin-right: 0px;
+
+            h1{
+                font-size: 48px;
+                margin-top: 300px;
+            }
+
+            h2{
+                font-size: 18px;
+            }
+        }
+    }
+
+    .ostudii-content{
+        .title{
+            margin-left: 70px;
+        }
+
+        .description{
+            font-size: 18px;
+            height: 370px;
+            padding-left: 90px;
+        }
+
+        .history-studio{
+            .image{
+                width: 55vw;
+            }
+
+            .text{
+                width: 40vw;
+            }
+        }
+
+        .kak-mi-rabotaem{
+            .image{
+                width: 55vw;
+            }
+
+            .text{
+                width: 40vw;
+                margin-left: 50px;
+                margin-top: 20px;
+
+                h1{
+                    margin-left: 90px;
+                }
+
+                .projecting, .creating, .performing, .seting
+                {
+                    p
+                    {
+                        width: 35vw;
+                    }
+                }
+
+                .projecting::before
+                {
+                    margin-top: 40px;
+                }
+
+                .creating::before
+                {
+                    margin-top: 185px;
+                }
+
+                .performing::before
+                {
+                    margin-top: 325px;
+                }
+
+                .seting::before
+                {
+                    margin-top: 450px;
+                }
+            }
+        }
+
+        .podhod{
+            .image{
+                width: 55vw;
+            }
+
+            .text{
+                width: 45vw;
+            }
+        }
+    }
+
+    .podbor-content{
+        .title{
+            margin-left: 70px;
+        }
+
+        .description{
+            padding-left: 70px;
+            padding-right: 70px;
+            font-size: 18px;
+        }
+
+        .podbor-main-content{
+            .text{
+                margin-left: 50px;
+                margin-top: 0px;
+            }
+        }
+
+        .garantia{
+            margin-top: 15px;
+            width: 200px;
+            margin-left: -50px;
+            padding-left: 25px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .kachestvo{
+            margin-top: 15px;
+            width: 243px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
     }
 }
 
@@ -20,6 +320,191 @@
     {
         max-width: 768px;
     }
+
+    .header{
+        .phone{
+            margin-left: 10px;
+        }
+    }
+    .content-main{
+        .next, .prev{
+            margin-top: 32px;
+        }
+    }
+    .footer{
+        font-size: 13px;
+        .footer-call{
+            margin-left: 0;
+        }
+        .footer-location{
+            margin-left: 30px;
+        }
+        .footer-policy{
+            margin-left: 10px;
+        }
+    }
+
+    .ostudii-content{
+        .title{
+            margin-left: -30px;
+        }
+
+        .history-studio{
+            height: 500px;
+            .image{
+                width: 45vw;
+                height: 500px;
+            }
+            .text{
+                width: 38vw;
+                padding-left: 15px;
+                h1{
+                    margin-top: -30px;
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .kak-mi-rabotaem{
+            height: 500px;
+            .image{
+                width: 45vw;
+                height: 500px;
+            }
+            .text{
+                width: 30vw;
+                margin-left: -50px;
+                h1{
+                    margin-top: 0;
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 14px;
+                    float:left;
+                }
+                .projecting, .creating, .performing, .seting{
+                    margin-left: 0;
+                }
+    
+                .creating::before
+                {
+                    margin-top: 155px;
+                }
+    
+                .performing::before
+                {
+                    margin-top: 270px;
+                }
+    
+                .seting::before
+                {
+                    margin-top: 360px;
+                }
+            }
+        }
+        .podhod{
+            .image{
+                width: 45vw;
+                height: 500px;
+            }
+            .text{
+                width: 38vw;
+                margin-top: 0px;
+                padding-left: 10px;
+
+                h1{
+                    margin-top: 0;
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 14px;
+                    float:left;
+                }
+            }
+
+            .btn-consultation{
+                margin-top: 15px;
+            }
+        }
+    }
+
+    .podbor-content{
+        .title{
+            h1{
+                font-size: 32px;
+            }
+            p{
+                font-size: 17px;
+            }
+        }
+        .podbor-main-content{
+            .image{
+                width: 500px;
+            }
+            .text{
+                width: 28vw;
+                margin-left: 0;
+
+                .btn-podbor{
+                    margin-top: 0px;
+                }
+            }
+        }
+
+        .garantia{
+            margin-top: 10px;
+            margin-left: -130px;
+            width: 217px;
+        }
+        .kachestvo{
+            margin-top: 10px;
+            margin-left: 0;
+        }
+    }
+
+    .price-content{
+        .title{
+            h1{
+                font-size: 40px;
+                text-align: center;
+                margin-left: 50px;
+            }
+        }
+        .card-price{
+            width: 800px;
+            margin-left: 0;
+
+            img{
+                width: 800px;
+            }
+            .check-box{
+                width: 36px;
+                margin-left: 80px;
+                margin-top:10px;
+            }
+
+            .check-box-text{
+                margin-top:-5px;
+            }
+
+            h2{
+                font-size: 20px;
+            }
+            .btn-zakaz{
+                margin-left: 300px;
+            }
+        }
+
+        .card4{
+            margin-top: 0;
+            img{
+                height: 500px;
+            }
+        }
+    }
 }
 
 @media(max-width: 768px)
@@ -28,12 +513,290 @@
     {
         max-width: 576px;
     }
+
+    .header{
+        .logo{
+            img{
+                margin-top: 10px;
+            }
+        }
+        .phone{
+            margin-left: 30px;
+            
+        }
+        .mail{
+            margin-left: 80px;
+            p{
+                color: black;
+            }
+        }
+        .social{
+            float: right;
+            margin-right: 100px;
+        }
+        .phone.nav-black-a, .mail.nav-black-a{
+            margin-left: 15px;
+        }
+    }
+
+    .header-black{
+        .logo{
+            img{
+                margin-top: 10px;
+            }
+        }
+        .phone{
+            margin-left: 30px;
+            .nav-black-a{
+                margin-left: 0px;
+            }
+        }
+        
+    }
+
+    .footer{
+        font-size: 12px;
+        .footer-call{
+            margin-left: -70px;
+            p{
+                
+            }
+        }
+        .footer-location{
+            margin-left: 40px;
+        }
+        .footer-policy{
+            margin-left: 10px;
+            margin-right: -90px;
+        }
+    }
+
+    .modal__content{
+        a{
+            font-size: 28px;
+        }
+    }
+
+    .ostudii-content{
+        .description{
+            font-size: 16px;
+            padding-left: 0;
+        }
+        .history-studio{
+            height: 400px;
+            .image{
+                width: 35vw;
+                height: 400px;
+            }
+
+            .text{
+                width: 45vw;
+                padding-left: 20px;
+                h1{
+                    font-size: 18px;
+                }
+                p{
+                    font-size: 12.6px;
+                    margin-top: -10px;
+                }
+            }
+        }
+        .kak-mi-rabotaem{
+            height: 400px;
+            .image{
+                width: 35vw;
+                height: 400px;
+            }
+            .text{
+                width: 45vw;
+                h1{
+                    font-size: 18px;
+                    margin-top: -20px;
+                }
+                p{
+                    font-size: 12.6px;
+                    margin-top: -7px;
+                }
+
+                .projecting::before{
+                    margin-top: 10px;
+                }
+                .creating::before{
+                    margin-top: 120px;
+                }
+                .performing::before{
+                    margin-top: 220px;
+                }
+                .seting::before{
+                    margin-top: 300px;
+                }
+                .projecting, .creating, .performing, .seting
+                {
+                    p
+                    {
+                        width: 35vw;
+                        float: right;
+                        padding-left: 15px;
+                    }
+                }
+            }
+        }
+        .podhod{
+            height: 400px;
+            .image{
+                width: 35vw;
+                height: 400px;
+            }
+            .text{
+                width: 45vw;
+                h1{
+                    font-size: 18px;
+                }
+                p{
+                    font-size: 12.6px;
+                    margin-top: -10px;
+                }
+            }
+            .btn-consultation{
+                margin-top: 0;
+            }
+        }
+    }
+
+    .podbor-content{
+        .title{
+            margin-left: -20px;
+        }
+        .podbor-main-content{
+            .text{
+                width: 30vw;
+                h1{
+                    font-size: 18px;
+                }
+                p{
+                    font-size: 14px;
+                }
+                margin-left: -20px;
+            }
+            .image{
+                position: absolute;
+                width: 445px;
+                height: 500px;
+                margin-right: 0;
+            }
+        }
+        .garantia{
+            h2{
+                font-size: 20px;
+            }
+            padding: 0;
+            padding-left: 40px;
+            margin-top: 6px;
+        }
+        .kachestvo{
+            h2{
+                font-size: 20px;
+            }
+            padding: 0;
+            padding-left: 20px;
+            width: 125px;
+            margin-top: 6px;
+        }
+    }
+
+    .price-content{
+        .card-price{
+            width: 600px;
+            margin-left: 0;
+
+            img{
+                width: 600px;
+            }
+            .check-box{
+                width: 36px;
+                margin-left: 40px;
+                margin-top:10px;
+            }
+            .btn-zakaz{
+                margin-left: 220px;
+            }
+        }
+
+        .card4{
+            margin-top: 0;
+            img{
+                height: 500px;
+            }
+        }
+
+        .calc-price{
+            width: 600px;
+        }
+    }
+    .content-main{
+        .owl-carousel{
+            img{
+                object-fit: cover;
+            }
+        }
+    }
 }
 
 @media(max-width: 576px)
 {
     .container
     {
-        max-width: 320px;
+        max-width: 100%;
+    }
+
+    .header{
+        .logo{
+            margin-left: 5px;
+        }
+        .phone{
+            margin-left: 5px;
+            p{
+                color: black;
+            }
+        }
+        .mail{
+            margin-left: 5px;
+        }
+        .social{
+            
+        }
+    }
+
+    .footer{
+        .footer-call{
+            margin: 20px;
+        }
+        .footer-location{
+
+        }
+        .footer-policy{
+            display: block;
+            float: left;
+            margin-left: 180px;
+            margin-top: 10px;
+        }
+        .copyright{
+            display: block;
+            margin-top: 30px;
+        }
+    }
+
+    .content-main{
+        .owl-carousel{
+            img{
+                object-fit: cover;
+            }
+        }
+    }
+
+    .modal__content{
+        a{
+            font-size: 24px;
+        }
     }
 }

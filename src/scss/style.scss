@@ -3,7 +3,6 @@ body
     margin: 0;
     color: #000;
     background: white;
-    //background-image: url(../images/Kak-modno-oformit-potolok.png);
     background-repeat:no-repeat;
     background-size:cover;
     font-family: opensans;
@@ -46,6 +45,11 @@ button, a
 
 .header
 {
+    position: fixed;
+    width: 100vw;
+    z-index: 1050;
+    background: none;
+
     .btn-menu
     {
         padding: 0;
@@ -155,13 +159,11 @@ button, a
     .instagram, .vk, .facebook
     {
         position:relative;
-        //margin-top: 0.5%;
         margin-left: 20px;
     }
 
     .feedback
     {
-        //position: absolute;
         position: fixed;
         margin-top: 15%;
 
@@ -198,10 +200,18 @@ button, a
     }
 }
 
+.header-black{
+    
+    background-color: white;
+}
+
 .footer
 {
-    flex: 0 0 auto;
     background-color: white;
+    bottom: 0;
+    left: 0;
+    width: 99vw;
+    flex: 0 0 auto;
 
     .container
     {
@@ -216,6 +226,11 @@ button, a
 
     .footer-call
     {
+        img
+        {
+            margin-top: -2px;
+        }
+
         margin-left: 5%;
         p
         {
@@ -234,6 +249,11 @@ button, a
             margin-left: 10px;
             font-weight: bold;
         }
+
+        img
+        {
+            margin-top: -2px;
+        }
     }
 
     .footer-policy
@@ -251,6 +271,7 @@ button, a
 
 .content-main
 {
+    height: 90vh;
     flex: 1 0 auto;
 
     .main-info
@@ -260,21 +281,21 @@ button, a
         background-color: rgba(255, 255, 255, 0.88);
         margin-top: -42%;
         text-align: center;
-        padding-bottom: 17%;
+        padding-bottom: 21%;
         margin-right: 10%;
         overflow: hidden;
 
         h1
         {
             margin-top: 50%;
-            font-family: akrobat;
+            //font-family: akrobat;
             font-weight: bold;
             font-size: 73px;
         }
 
         h2
         {
-            font-family: akrobat;
+            //font-family: akrobat;
             font-weight: bold;
             font-size: 26px;
         }
@@ -290,7 +311,7 @@ button, a
             background-color: black;
             color: white;
             padding: 3% 6% 3% 6%;
-            font-family: akrobat;
+            //font-family: akrobat;
             font-size: 18px;
             margin-top: 5%;
         }
@@ -305,8 +326,7 @@ button, a
 
         img
         {
-            width: 100vw;
-            height: 93vh;
+            width: 100%;
         }
     }
 
@@ -320,12 +340,11 @@ button, a
         height: 50px;
         text-align: center;
         float: right;
-        margin-top: 3.3%;
+        margin-top: 5.9%;
 
         img
         {
             margin-top: 25%;
-            //vertical-align: middle;
         }
     }
     .prev:hover, .next:hover
@@ -343,12 +362,14 @@ button, a
 {
     background: none;
     color: white;
-    font-family: acrobat;
+    //font-family: acrobat;
     font-weight: bold;
     font-size: 24px;
-    h1
+    a
     {
         font-size: 40px;
+        display: block;
+        padding-bottom: 30px;
     }
     width: 80vw;
     margin-left: 5%;
@@ -357,8 +378,8 @@ button, a
 .btn__modal__close
 {
     right: auto;
-    left: 10px;
-    top: 10px;
+    left: 15px;
+    top: 15px;
     background: none;
 }
 
@@ -430,11 +451,12 @@ button, a
 
 .ostudii-content
 {
+    margin-top: 50px;
     .title
     {
         h1
         {
-            font-size: acrobat;
+            //font-family: acrobat;
             font-weight: bold;
             font-size: 48px;
         }
@@ -581,11 +603,12 @@ button, a
 
 .podbor-content
 {
+    margin-top: 50px;
     .title
     {
         h1
         {
-            font-family: acrobat;
+            //font-family: acrobat;
             font-weight: bold;
             font-size: 48px;
         }
@@ -644,55 +667,185 @@ button, a
     }
 
     .garantia
-            {
-                margin-top: 56px;
-                padding: 20px 50px 20px 50px;
-                background-color: rgb(35, 35, 35);
-                margin-left: -12.6%;
-                display: inline-block;
-                width: 30vw;
+    {
+        margin-top: 56px;
+        padding: 20px 50px 20px 50px;
+        background-color: rgb(35, 35, 35);
+        margin-left: -12.6%;
+        display: inline-block;
+        width: 30vw;
 
-                h1
-                {
-                    font-weight: bold;
-                    color: white;
-                    font-size: 28px;
-                    margin-left: 30%;
-                }
+        h2
+        {
+            font-weight: bold;
+            color: white;
+            font-size: 28px;
+            margin-left: 30%;
+        }
 
-                p
-                {
-                    margin-left: 30%;
-                    color: white;
-                    margin-top: -25px;
-                }
-            }
-            
-            .kachestvo
-            {
-                margin-left: -10px;
-                margin-top: 56px;
-                padding: 20px 50px 20px 50px;
-                background-color: rgb(131, 145, 151);
-                display: inline-block;
-                width: 536px;
-                position: absolute;
+        p
+        {
+            margin-left: 30%;
+            color: white;
+            margin-top: -25px;
+        }
+    }
+    
+    .kachestvo
+    {
+        margin-left: -10px;
+        margin-top: 56px;
+        padding: 20px 50px 20px 50px;
+        background-color: rgb(131, 145, 151);
+        display: inline-block;
+        width: 536px;
+        position: absolute;
 
-                h1
-                {
-                    font-weight: bold;
-                    color: white;
-                    font-size: 28px;
-                    margin-left: 5%;
-                }
+        h2
+        {
+            font-weight: bold;
+            color: white;
+            font-size: 28px;
+            margin-left: 5%;
+        }
 
-                p
-                {
-                    margin-left: 5%;
-                    color: white;
-                    margin-top: -25px;
-                }
-            }
+        p
+        {
+            margin-left: 5%;
+            color: white;
+            margin-top: -25px;
+        }
+    }
+}
+
+.price-content
+{
+    margin-top: 50px;
+    .title
+    {
+        h1{
+            //font-family: acrobat;
+            font-weight: bold;
+            font-size: 48px;
+        }
+    }
+
+    .calc-price
+    {
+        color: white;
+        background-color: rgb(35, 35, 35);
+        text-align: center;
+        padding: 50px;
+        width: 800px;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+        input{
+            display: block;
+            border: none;
+            background-color: rgb(35, 35, 35);
+            color: white;
+            border-bottom: white solid 1px;
+            width: 500px;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        ::-webkit-input-placeholder{
+            color: white;
+        }
+
+        .btn-calc-price
+        {
+            border: none;
+            background-color: white;
+            color: black;
+            padding: 3% 6% 3% 6%;
+            font-family: akrobat;
+            font-size: 18px;
+            margin-top: 5%;
+        }
+    }
+}
+
+.card-price{
+    color: white;
+    //font-family: acrobat;
+    font-weight: bold;
+    background-color: rgb(35, 35, 35);
+    display: inline-block;
+    padding: 0;
+    width: 571px;
+    margin-left: 100px;
+
+    vertical-align: top;
+
+    li
+    {
+        color: red;
+    }
+
+    li span
+    {
+        color: white;
+        font-weight: normal;
+    }
+
+    .title-price{
+        margin-top: 20px;
+        margin-left: 20px;
+        display: inline-block;
+        font-size: 20px;
+    }
+    .price-card-price
+    {
+        display: inline-block;
+        color: red;
+        font-size: 20px;
+    }
+
+    p{
+        font-weight: normal;
+        margin-left: 10px;
+        padding: 0px 10px 10px 10px;
+        margin-top: -10px;
+    }
+
+    .check-box
+    {
+        margin-left: 10px;
+        vertical-align: top;
+        
+    }
+
+    .check-box-text
+    {
+        vertical-align: middle;
+        display: inline-block;
+    }
+
+    .btn-zakaz
+    {
+        border: none;
+        background-color: rgb(195, 35, 40);
+        color: white;
+        padding: 3% 6% 3% 6%;
+        font-family: akrobat;
+        font-size: 18px;
+        margin: 20px;
+        margin-left: 35%;
+    }
+}
+
+.card4
+{
+    margin-top: -140px;
+    img{
+        height: 600px;
+        width: 100%;
+    }
+    padding-bottom: 0px;
 }
 
 @import 'responce';

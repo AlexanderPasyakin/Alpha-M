@@ -6,19 +6,11 @@ mixin Modal(id, modalTemplate)
                 +#{modalTemplate}(entry)
 
 mixin ModalTemplate
-    a(href="") 
-        h1.price-menu Стоимость дизайна проекта
-    a(href="podbor.html") 
-        h1.podbor-menu Подбор мебели
-    a(href="ostudii.html") 
-        h1.ostudii-menu О студии
-    a(href="") 
-        h1.projects-menu Наши проекты
-    a(href="") 
-        h1.contacts-menu Контакты
-    a(href="") 
-        h1.klienti-menu Клиенты
-    a(href="") 
-        h1.arch-menu Архитекторам
-    a(href="") 
-        h1.catalog-menu Каталог офисной мебели
+    a(href="price.html").price-menu Стоимость дизайна проекта
+    a(href="podbor.html").podbor-menu Подбор мебели
+    a(href="ostudii.html").ostudii-menu О студии
+    a(href="").projects-menu Наши проекты
+    a(href="").contacts-menu Контакты
+    a(href="").klienti-menu Клиенты
+    a(href="").arch-menu Архитекторам
+    a(href="").catalog-menu Каталог офисной мебели
